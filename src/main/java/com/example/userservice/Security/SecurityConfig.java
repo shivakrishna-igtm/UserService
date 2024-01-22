@@ -104,6 +104,7 @@ public class SecurityConfig {
 				.authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
 				.authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS) //added this line due to client credentials grant type from postman
 				.redirectUri("http://127.0.0.1:8080/login/oauth2/code/oidc-client")
+				.redirectUri("https://oauth.pstmn.io/v1/callback")
 				.postLogoutRedirectUri("http://127.0.0.1:8080/")
 				.scope(OidcScopes.OPENID)
 				.scope(OidcScopes.PROFILE)
